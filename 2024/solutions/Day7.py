@@ -3,7 +3,7 @@ import time
 
 from utils.Utils import read_file
 
-riddle_in = read_file("../Inputs/Day7.txt")
+riddle_in = read_file("../inputs/Day7.txt")
 riddle_in = [(int(line.split(":")[0]), list(map(int, line.split(":")[1].split()))) for line in riddle_in]
 
 

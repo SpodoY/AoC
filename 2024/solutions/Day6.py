@@ -45,7 +45,7 @@ VISITED = "X"
 dir_list = list(Direction)
 current_dir = Direction.NORTH
 
-riddle_in = read_file("../Inputs/mockin.txt")
+riddle_in = read_file("../inputs/mockin.txt")
 
 
 def p1():

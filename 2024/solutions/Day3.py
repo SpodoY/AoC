@@ -1,6 +1,6 @@
 import re
 
-with open("../Inputs/Day3.txt") as riddle_in:
+with open("../inputs/Day3.txt") as riddle_in:
     riddle_in = "".join([line.rstrip("\n") for line in riddle_in.readlines()])
 
 valid_expression_p1 = re.compile(r"mul\((\d{1,3}),(\d{1,3})\)", re.IGNORECASE)

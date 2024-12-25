@@ -5,7 +5,7 @@ rule_reg = re.compile(r"\d+\|\d+")
 exec_reg = re.compile(r"(\d+)+")
 rule_set = defaultdict(list)
 
-with open("../Inputs/mockin.txt") as riddle_in:
+with open("../inputs/mockin.txt") as riddle_in:
     riddle_in = [line.rstrip("\n") + "" for line in riddle_in.readlines()]
     # print(riddle_in)
     split_index = riddle_in.index('')

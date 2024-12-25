@@ -1,6 +1,6 @@
 import re
 
-with open("../Inputs/Day2.txt") as riddle_in:
+with open("../inputs/Day2.txt") as riddle_in:
     riddle_in = [[int(x) for x in line.rstrip("\n").split(" ")] for line in riddle_in.readlines()]
 
 def good(d, s=0):

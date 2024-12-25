@@ -1,4 +1,4 @@
-with open("../Inputs/Day4.txt") as riddle_in:
+with open("../inputs/Day4.txt") as riddle_in:
     riddle_in = [line.rstrip("\n") for line in riddle_in.readlines()]
 
 check_word = "XMAS"

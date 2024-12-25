@@ -1,6 +1,6 @@
 import re
 
-with open("../Inputs/Day1.txt") as riddle_in:
+with open("../inputs/Day1.txt") as riddle_in:
     riddle_in = [re.split(r" +", line.rstrip("\n")) for line in riddle_in.readlines()]
 
 l_list = [int(x[0]) for x in riddle_in]
