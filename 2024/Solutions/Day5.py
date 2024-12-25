@@ -41,6 +41,10 @@ def p2():
         if validate_set(line): invalid_execs.append(line)
     # while (notOrdered)
     print(invalid_execs)
+    for invalid_exec in invalid_execs:
+        # while (True):
+            for i, fact in enumerate(invalid_exec):
+                p2_check_ruleset_violation(fact, invalid_exec[0:i])
 
 
 def create_ruleset():
@@ -56,5 +60,22 @@ def check_ruleset_violation(fact: int, prev_execs: list) -> bool:
     return violation
 
 
-p1()
+def p2_check_ruleset_violation(fact: int, prev_execs: list) -> bool:
+    rules_for_fact = rule_set[fact]
+
+
+
+
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+
+
+# p1()
 p2()
